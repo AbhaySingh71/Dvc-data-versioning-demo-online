@@ -1,0 +1,67 @@
+#dvc with remote storage
+
+1 Explain the problem statement
+2 Create project directory/ and data, src directories
+3 Initialize git
+4 Initialize DVC [Explanation of files)
+5 Create a GitHub repository
+6 Add remote for git
+7 Add remote for DVC [Changes in config file) -> echo %TEMP% -> dvc remote add -d myremote C:\Users\abhay\AppData\Local\Temp\Abhaystorage
+8 Git add -Y First commit [DVC config files)
+9 Write python code -Y Run [Git status/DVC Status j
+10 DVC add [Multiple things happen here]
+11 git add code/dvc files
+12 git commit
+13 dvc push to remote
+14 git push to GitHub [Expreiment 1]
+15 Start experiment 2 -> Change code -> run
+
+
+
+# now dvc with pipeline & local storage
+
+1 Set up cookiecutter -> delete files -> rename models to model
+2 Initialize git
+3 Initialize DVC
+4 Create a GitHub repository
+5 Add remote for git
+6 Add remote for DVC
+7 Git add -> First commit
+8 data ingestion -Y Add data preprocessing -> add Feature engg -> add model building -> add model eval
+9 dvc.yaml -> Add params.yaml
+10 DVC repro
+11 git status / dvc status
+12 Git add code/dvc file
+13 Git commit
+14 Dvc push to remote
+15 Gitpush to GitHub
+
+# now dvc with Amazon S3 bucket
+
+Create S3 bucket
+create IAM user
+pip install dvc[s3]
+pip install awscli
+git init
+dvc init
+git remote add
+aws configure
+dvc remote add -d dvstore s3://name
+dvc add
+git commit
+dvc push
+git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
